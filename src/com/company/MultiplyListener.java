@@ -32,7 +32,6 @@ public class MultiplyListener implements ActionListener
     public void actionPerformed(ActionEvent e)
     {
         String sizes = sizePane.showInputDialog("Enter dimensions of matrix 1, separated by comma");
-        //System.out.println(sizes);
         Scanner scanner = new Scanner(sizes).useDelimiter(",");
         mat1rows = scanner.nextInt();
         mat1cols = scanner.nextInt();
@@ -44,15 +43,16 @@ public class MultiplyListener implements ActionListener
         size1 = mat1rows * mat1cols;
         size2 = mat2rows * mat2cols;
 
-       //System.out.println(x1);
-        //System.out.println(y1);
-        //System.out.println(x2);
+       /*System.out.println(mat1rows);
+        System.out.println(mat1cols);
+        System.out.println(mat2rows);
+        System.out.println(mat2cols);*/
 
         if(mat1cols == mat2rows)
         {
             frame1 = new JFrame("Matrix 1");
             frame2 = new JFrame("Matrix 2");
-            fields = new ArrayList<JTextField>(size1 + size2);
+            fields = new ArrayList<JTextField>();
 
             JPanel panel1 = new JPanel();
             panel1.setLayout(new GridLayout(mat1rows,mat1cols));
@@ -97,10 +97,6 @@ public class MultiplyListener implements ActionListener
                     Scanner scanner = new Scanner(textFieldVal);
                     m1.add(scanner.nextInt());
                 }
-                /*for(int i = 0; i < size1; i++)
-                {
-                    System.out.println(m1.get(i));
-                }*/
             }
         });
 
@@ -114,13 +110,6 @@ public class MultiplyListener implements ActionListener
                     Scanner scanner = new Scanner(textFieldVal);
                     m2.add(scanner.nextInt());
                 }
-                /*for(int i = 0; i < size2; i++)
-                {
-                    System.out.println(m2.get(i));
-                }*/
-                //matMult();
-                //getM1();
-                //getM2();
                 ArrayList<Integer> m3 = matMult();
                 getM3(m3);
             }
@@ -133,43 +122,31 @@ public class MultiplyListener implements ActionListener
 
     }
 
-    /*public void matMult()
-    {
-        int a,b,c,d;
-        ArrayList<Integer> tempMatrix = new ArrayList<Integer>();
-
-        for(int i = 0; i < x1; i++)
-        {
-            for(int j = 0; j < y1; j++)
-            {
-                System.out.print(m1.get(i + j));
-            }
-
-        }
-    }*/
-
     public ArrayList<Integer> matMult()
     {
-        ArrayList<Integer> m3 = new ArrayList<Integer>();
+        ArrayList<Integer> m = new ArrayList<Integer>();
 
-        for(int a = 0; a < mat1rows; a++)
+        //d = d + m1.get(a * mat1cols + c) * m2.get(c * mat2rows + b);
+        for(int i = 0; i < mat1rows; i++)
         {
-            for(int b = 0; b < mat2cols; b++)
+
+            for(int j = 0; j < mat2cols; j++)
             {
                 int d = 0;
-                for(int c = 0; c < mat2rows; c++)
+
+                for(int k = 0; k < mat2rows; k++)
                 {
-                    d = d + m1.get(a * mat1cols + c) * m2.get(c * mat2rows + b);
-                    //System.out.println(d);
-                   //m3.add(d);
+                    int x = m1.get(i * mat1cols + k);
+                    int y = m2.get(k * mat2cols + j);
+                   // System.out.println(x + "*" + y + "=" + (x*y));
+                    d += x*y;
+
                 }
-                //System.out.println(d);
-                m3.add(d);
-
-
+                //System.out.println("d = " + d);
+                m.add(d);
             }
         }
-        return m3;
+        return m;
 
     }
 
@@ -196,13 +173,24 @@ public class MultiplyListener implements ActionListener
     }
     public void getM3(ArrayList<Integer> m)
     {
+        JFrame solFrame = new JFrame("Solution");
+        JPanel solution = new JPanel();
+        JPanel tempPanel;
+        solution.setLayout(new GridLayout(mat1rows,mat2cols));
         for(int i = 0; i < mat1rows; i++)
         {
             for(int j = 0; j < mat2cols; j++)
             {
+                tempPanel = new JPanel();
+                tempPanel.add(new JLabel("" + m.get(i*mat2cols + j)), BorderLayout.CENTER);
+                //solution.add(new JLabel("" + m.get(i*mat2cols + j)));
                 System.out.println(m.get(i*mat2cols + j));
+                solution.add(tempPanel);
             }
         }
+        solFrame.add(solution, BorderLayout.CENTER);
+        solFrame.setSize(300,400);
+        solFrame.setVisible(true);
     }
 
     public int getX()
