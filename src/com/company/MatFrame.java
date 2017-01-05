@@ -47,9 +47,7 @@ public class MatFrame extends JFrame
 
 
         this.add(bar, BorderLayout.NORTH);
-
-        //ActionListener multListener = new MultiplyListener();
-        //mult.addActionListener(multListener);
+        
 
 
     }

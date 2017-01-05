@@ -43,11 +43,6 @@ public class MultiplyListener implements ActionListener
         size1 = mat1rows * mat1cols;
         size2 = mat2rows * mat2cols;
 
-       /*System.out.println(mat1rows);
-        System.out.println(mat1cols);
-        System.out.println(mat2rows);
-        System.out.println(mat2cols);*/
-
         if(mat1cols == mat2rows)
         {
             frame1 = new JFrame("Matrix 1");
@@ -138,11 +133,9 @@ public class MultiplyListener implements ActionListener
                 {
                     int x = m1.get(i * mat1cols + k);
                     int y = m2.get(k * mat2cols + j);
-                   // System.out.println(x + "*" + y + "=" + (x*y));
                     d += x*y;
 
                 }
-                //System.out.println("d = " + d);
                 m.add(d);
             }
         }

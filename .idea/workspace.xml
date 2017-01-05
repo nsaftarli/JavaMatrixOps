@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c000497-078f-49c8-a596-05c357d565f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener$1.class" afterPath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener$2.class" afterPath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener.class" afterPath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MatFrame.java" afterPath="$PROJECT_DIR$/src/com/company/MatFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MultiplyListener.java" afterPath="$PROJECT_DIR$/src/com/company/MultiplyListener.java" />
     </list>
     <ignored path="MatrixOps.iws" />
@@ -29,21 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19589552">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MatFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/MatFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="15" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.8955224">
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/MultiplyListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="185" column="18" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
+              <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,8 +84,8 @@
         <option value="$PROJECT_DIR$/src/com/company/MultiplyOperations.java" />
         <option value="$PROJECT_DIR$/src/com/company/OperationPanel.java" />
         <option value="$PROJECT_DIR$/src/com/company/SizePanel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/MatFrame.java" />
         <option value="$PROJECT_DIR$/src/com/company/MultiplyListener.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MatFrame.java" />
       </list>
     </option>
   </component>
@@ -644,17 +641,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/MultiplyListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="18" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MatFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="15" />
+          <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -663,9 +650,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19589552">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MatFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8955224">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
