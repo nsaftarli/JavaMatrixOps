@@ -12,21 +12,20 @@ import java.util.Scanner;
 public class MultiplyListener implements ActionListener
 {
 
+    MatrixFrame mFrame1;
+    MatrixFrame mFrame2;
+
     int mat1rows = -1;
     int mat1cols = -1;
     int mat2rows = -1;
     int mat2cols = -1;
     int size1;
     int size2;
-    JFrame frame1;
-    JFrame frame2;
-    JButton save1 = new JButton("Save Matrix 1");
-    JButton save2 = new JButton("Save Matrix 2 and multiply");
+    JButton save = new JButton("Multiply");
     JOptionPane sizePane;
 
     ArrayList<Integer> m1;
     ArrayList<Integer> m2;
-    ArrayList<JTextField> fields;
 
     public void actionPerformed(ActionEvent e)
     {
@@ -47,63 +46,34 @@ public class MultiplyListener implements ActionListener
 
         if(mat1cols == mat2rows)
         {
-            frame1 = new JFrame("Matrix 1");
-            frame2 = new JFrame("Matrix 2");
-            fields = new ArrayList<JTextField>();
-
-            JPanel panel1 = new JPanel();
-            panel1.setLayout(new GridLayout(mat1rows,mat1cols));
-            JPanel panel2 = new JPanel();
-            panel2.setLayout(new GridLayout(mat2rows,mat2cols));
-
-            for(int i = 0; i < size1; i++)
-            {
-                fields.add(new JTextField());
-                panel1.add(fields.get(i));
-            }
-            for(int i = 0 ; i < size2; i++)
-            {
-                fields.add(i + size1,new JTextField());
-                panel2.add(fields.get(i+size1));
-            }
-            frame1.add(panel1, BorderLayout.CENTER);
-            frame1.add(save1, BorderLayout.SOUTH);
-            frame1.setSize(300,400);
-            frame1.setVisible(true);
-            frame2.add(panel2, BorderLayout.CENTER);
-            frame2.add(save2, BorderLayout.SOUTH);
-            frame2.setSize(300,400);
-            frame2.setLocation(300, 0);
-            frame2.setVisible(true);
-
-
-
+            mFrame1 = new MatrixFrame(mat1rows, mat1cols, "Matrix 1");
+            mFrame2 = new MatrixFrame(mat2rows, mat2cols, "Matrix 2");
+            mFrame1.setSize(200,300);
+            mFrame2.setSize(200,300);
+            mFrame1.setVisible(true);
+            mFrame2.setVisible(true);
+            mFrame2.setLocation(200, 0);
+            mFrame2.add(save, BorderLayout.SOUTH);
         }
         else
         {
             System.out.println("Error: Mismatched matrix sizes.");
         }
 
-        save1.addActionListener(new ActionListener()
+        save.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
             {
+
                 for(int i = 0; i < size1; i++)
                 {
-                    String textFieldVal = fields.get(i).getText();
+                    String textFieldVal = mFrame1.getFields().get(i).getText();
                     Scanner scanner = new Scanner(textFieldVal);
                     m1.add(scanner.nextInt());
                 }
-            }
-        });
-
-        save2.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
                 for(int i = 0; i < size2; i++)
                 {
-                    String textFieldVal = fields.get(i + size1).getText();
+                    String textFieldVal = mFrame2.getFields().get(i).getText();
                     Scanner scanner = new Scanner(textFieldVal);
                     m2.add(scanner.nextInt());
                 }
@@ -111,18 +81,11 @@ public class MultiplyListener implements ActionListener
                 getM3(m3);
             }
         });
-
-
-
-
-
-
     }
 
     public ArrayList<Integer> matMult()
     {
         ArrayList<Integer> m = new ArrayList<Integer>();
-
         //d = d + m1.get(a * mat1cols + c) * m2.get(c * mat2rows + b);
         for(int i = 0; i < mat1rows; i++)
         {
@@ -142,7 +105,6 @@ public class MultiplyListener implements ActionListener
             }
         }
         return m;
-
     }
 
     public void getM1()

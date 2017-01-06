@@ -28,6 +28,11 @@ public class MatrixFrame extends JFrame
         this.add(panel);
     }
 
+    public ArrayList<JTextField> getFields()
+    {
+        return fields;
+    }
+
 
 
 
