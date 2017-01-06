@@ -22,15 +22,17 @@ public class MultiplyListener implements ActionListener
     JFrame frame2;
     JButton save1 = new JButton("Save Matrix 1");
     JButton save2 = new JButton("Save Matrix 2 and multiply");
-    JPanel sizePanel = new JPanel();
-    JOptionPane sizePane = new JOptionPane();
+    JOptionPane sizePane;
 
-    ArrayList<Integer> m1 = new ArrayList<Integer>();
-    ArrayList<Integer> m2 = new ArrayList<Integer>();
+    ArrayList<Integer> m1;
+    ArrayList<Integer> m2;
     ArrayList<JTextField> fields;
 
     public void actionPerformed(ActionEvent e)
     {
+        m1 = new ArrayList<Integer>();
+        m2 = new ArrayList<Integer>();
+        sizePane = new JOptionPane();
         String sizes = sizePane.showInputDialog("Enter dimensions of matrix 1, separated by comma");
         Scanner scanner = new Scanner(sizes).useDelimiter(",");
         mat1rows = scanner.nextInt();
@@ -176,8 +178,6 @@ public class MultiplyListener implements ActionListener
             {
                 tempPanel = new JPanel();
                 tempPanel.add(new JLabel("" + m.get(i*mat2cols + j)), BorderLayout.CENTER);
-                //solution.add(new JLabel("" + m.get(i*mat2cols + j)));
-                System.out.println(m.get(i*mat2cols + j));
                 solution.add(tempPanel);
             }
         }
@@ -186,15 +186,6 @@ public class MultiplyListener implements ActionListener
         solFrame.setVisible(true);
     }
 
-    public int getX()
-    {
-        return mat1rows;
-    }
-
-    public int getY()
-    {
-        return mat1cols;
-    }
 
 
 }

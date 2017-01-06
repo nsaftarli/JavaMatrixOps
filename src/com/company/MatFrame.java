@@ -11,43 +11,46 @@ import java.util.Scanner;
 
 public class MatFrame extends JFrame
 {
-    int x1, x2, y1, y2;
-    public MatFrame()
-    {
+    public MatFrame() {
         JMenuBar bar;
-        JMenu file;
-        JMenu ops;
-        JMenu diagnose;
-        JMenuItem mult;
-        JMenuItem showDims1;
-        JMenuItem showDims2;
-        JPanel panel;
-        JButton mulButton, invButton, adjButton;
-
+            JMenu file;
+                JMenuItem close;
+            JMenu ops;
+                JMenuItem mult;
 
         bar = new JMenuBar();
             file = new JMenu("File");
+                close = new JMenuItem("Quit");
+            file.add(close);
             ops = new JMenu("Operations");
                 mult = new JMenuItem("Multiply");
             ops.add(mult);
-            diagnose = new JMenu("Diagnostics");
-                showDims1 = new JMenuItem("Matrix 1 Dimensions");
-                showDims2 = new JMenuItem("Matrix 2 Dimensions");
-            diagnose.add(showDims1);
-            diagnose.add(showDims2);
         bar.add(file);
         bar.add(ops);
-        bar.add(diagnose);
 
         ActionListener multiplyListener = new MultiplyListener();
         mult.addActionListener(multiplyListener);
 
-        MultiplyListener multListener = (MultiplyListener) multiplyListener;
+
+
+        class ExitListener implements ActionListener
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                System.exit(0);
+            }
+        }
+        ActionListener exitListener = new ExitListener();
+        close.addActionListener(exitListener);
+
+        //MultiplyListener multListener = (MultiplyListener) multiplyListener;
+
+
 
 
 
         this.add(bar, BorderLayout.NORTH);
-        
+
 
 
     }
