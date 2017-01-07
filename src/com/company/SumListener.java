@@ -47,6 +47,7 @@ public class SumListener implements ActionListener
                         m2.add(scanner.nextInt());
                     }
                     ArrayList<Integer> m3 = doSum();
+                    getM3(m3);
                 }
 
             });
@@ -58,15 +59,40 @@ public class SumListener implements ActionListener
 
 
     }
-    public ArrayList<Integer> doSum()
+
+    public void getM3(ArrayList<Integer> m)
     {
-        ArrayList<Integer> tempList = new ArrayList<Integer>();
+        JFrame solFrame = new JFrame("Solution");
+        JPanel solution = new JPanel();
+        JPanel tempPanel;
+        solution.setLayout(new GridLayout(mat1rows,mat1cols));
         for(int i = 0; i < mat1rows; i++)
         {
             for(int j = 0; j < mat1cols; j++)
             {
-
+                tempPanel = new JPanel();
+                tempPanel.add(new JLabel("" + m.get(i*mat1cols + j)), BorderLayout.CENTER);
+                solution.add(tempPanel);
             }
+        }
+        solFrame.add(solution, BorderLayout.CENTER);
+        solFrame.setSize(300,400);
+        solFrame.setVisible(true);
+    }
+
+    public ArrayList<Integer> doSum()
+    {
+        ArrayList<Integer> tempList = new ArrayList<Integer>();
+        int a,b,c;
+        for(int i = 0; i < mat1rows; i++)
+        {
+            for(int j = 0; j < mat1cols; j++)
+            {
+                a = m1.get(i * mat1cols + j);
+                b = m2.get(i * mat1cols + j);
+                tempList.add(a + b);
+            }
+
         }
         return tempList;
 
@@ -86,6 +112,8 @@ public class SumListener implements ActionListener
         size1 = mat1rows * mat1cols;
         size2 = mat2rows * mat2cols;
     }
+
+
     public int setMatrices()
     {
         mFrame1 = new MatrixFrame(mat1rows, mat1cols, "Matrix 1");

@@ -34,7 +34,8 @@ public class MatFrame extends JFrame
         ActionListener multiplyListener = new MultiplyListener();
         mult.addActionListener(multiplyListener);
 
-
+        ActionListener sumListener = new SumListener();
+        sum.addActionListener(sumListener);
 
 
 
