@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c000497-078f-49c8-a596-05c357d565f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/SumListener.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener$2.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MatFrame$1ExitListener.class" afterPath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MatFrame$1ExitListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MatFrame.class" afterPath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MatFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener$1.class" afterPath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener.class" afterPath="$PROJECT_DIR$/out/production/MatrixOps/com/company/MultiplyListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MatFrame.java" afterPath="$PROJECT_DIR$/src/com/company/MatFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MatrixFrame.java" afterPath="$PROJECT_DIR$/src/com/company/MatrixFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MultiplyListener.java" afterPath="$PROJECT_DIR$/src/com/company/MultiplyListener.java" />
-    </list>
+    <list default="true" id="9c000497-078f-49c8-a596-05c357d565f9" name="Default" comment="" />
     <ignored path="MatrixOps.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MatFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/MatFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.07649254">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -57,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SumListener.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SumListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/SumListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5242537">
+            <state vertical-scroll-proportion="0.0">
               <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,7 +64,7 @@
       <file leaf-file-name="MultiplyListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/MultiplyListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.222221">
+            <state vertical-scroll-proportion="-58.333332">
               <caret line="106" column="17" selection-start-line="87" selection-start-column="8" selection-end-line="106" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -136,8 +125,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
-    <option name="y" value="23" />
+    <option name="x" value="340" />
+    <option name="y" value="27" />
     <option name="width" value="1066" />
     <option name="height" value="733" />
   </component>
@@ -487,8 +476,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="23" width="1066" height="733" extended-state="0" />
-    <editor active="true" />
+    <frame x="340" y="27" width="1066" height="733" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -497,7 +486,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14608434" sideWeight="0.2814259" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15060242" sideWeight="0.7185741" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15060242" sideWeight="0.7185741" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2804878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -751,21 +740,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MatFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/MultiplyListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.222221">
+        <state vertical-scroll-proportion="-58.333332">
           <caret line="106" column="17" selection-start-line="87" selection-start-column="8" selection-end-line="106" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -776,13 +753,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/SumListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5242537">
+        <state vertical-scroll-proportion="0.0">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#446#455#0" expanded="true" />
             <element signature="e#500#509#0" expanded="true" />
             <element signature="e#1817#1826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MatFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07649254">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
           </folding>
         </state>
       </provider>
