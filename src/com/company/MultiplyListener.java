@@ -82,7 +82,6 @@ public class MultiplyListener implements ActionListener
             }
         });
     }
-
     public ArrayList<Integer> matMult()
     {
         ArrayList<Integer> m = new ArrayList<Integer>();
@@ -107,27 +106,6 @@ public class MultiplyListener implements ActionListener
         return m;
     }
 
-    public void getM1()
-    {
-        for(int i = 0; i < mat1rows; i++)
-        {
-            for(int j = 0; j < mat1cols; j++)
-            {
-                System.out.println(m1.get(i*mat1cols + j));
-            }
-
-        }
-    }
-    public void getM2()
-    {
-        for(int i = 0; i < mat2rows; i++)
-        {
-            for(int j = 0; j < mat2cols; j++)
-            {
-                System.out.println(m2.get(i*mat2cols + j));
-            }
-        }
-    }
     public void getM3(ArrayList<Integer> m)
     {
         JFrame solFrame = new JFrame("Solution");
