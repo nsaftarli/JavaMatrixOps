@@ -2,8 +2,6 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
-import java.util.Scanner;
 
 /**
  * Created by Nariman on 2016-12-31.
@@ -19,6 +17,7 @@ public class MatFrame extends JFrame
                 JMenuItem mult;
                 JMenuItem sum;
 
+        //Create general frame and menus
         bar = new JMenuBar();
             file = new JMenu("File");
                 close = new JMenuItem("Quit");
@@ -31,6 +30,10 @@ public class MatFrame extends JFrame
         bar.add(file);
         bar.add(ops);
 
+
+
+
+        //Adds action listeners to the JMenuItems
         ActionListener multiplyListener = new MultiplyListener();
         mult.addActionListener(multiplyListener);
 
@@ -48,11 +51,6 @@ public class MatFrame extends JFrame
         }
         ActionListener exitListener = new ExitListener();
         close.addActionListener(exitListener);
-
-        //MultiplyListener multListener = (MultiplyListener) multiplyListener;
-
-
-
 
 
         this.add(bar, BorderLayout.NORTH);

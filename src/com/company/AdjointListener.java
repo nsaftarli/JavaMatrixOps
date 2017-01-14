@@ -79,6 +79,7 @@ public class AdjointListener implements ActionListener
                 int x = m1.get(i*matcols + j);
             }
         }
+        return adjoint;
     }
 
 }

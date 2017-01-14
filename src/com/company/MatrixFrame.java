@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class MatrixFrame extends JFrame
 {
     ArrayList<JTextField> fields;
+    ArrayList<Integer> nums = new ArrayList<Integer>();
     JPanel panel;
     public MatrixFrame(int rows, int cols, String title)
     {
@@ -26,6 +27,11 @@ public class MatrixFrame extends JFrame
             }
         }
         this.add(panel);
+    }
+
+    public void addNums(int x)
+    {
+        
     }
 
     public ArrayList<JTextField> getFields()

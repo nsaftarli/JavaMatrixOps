@@ -12,14 +12,20 @@ import java.util.Scanner;
  */
 public class SumListener implements ActionListener
 {
-    MatrixFrame mFrame1, mFrame2;
+    //integers to keep track of matrix dimensions
+    int mat1rows, mat1cols, mat2rows, mat2cols, size1, size2;
+    //OptionPane to take size input, button to take a sum once matrices have been entered
     JOptionPane sizePane;
     JButton sum;
+    //Scanner to read text fields of matrices
     Scanner scanner;
+    //Temporary string to keep track of matrix sizes until scanned
     String sizes;
+    //The final matrix object that will hold data associated with given matrices
+    MatrixFrame mFrame1, mFrame2;
+    //Two array lists of integers, will hold matrix data sequentially
     ArrayList<Integer> m1 = new ArrayList<Integer>();
     ArrayList<Integer> m2 = new ArrayList<Integer>();
-    int mat1rows, mat1cols, mat2rows, mat2cols, size1, size2;
 
     public void actionPerformed(ActionEvent e)
     {
