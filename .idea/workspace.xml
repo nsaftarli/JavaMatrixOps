@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c000497-078f-49c8-a596-05c357d565f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/AdjointListener.java" afterPath="$PROJECT_DIR$/src/com/company/AdjointListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MatFrame.java" afterPath="$PROJECT_DIR$/src/com/company/MatFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MatrixFrame.java" afterPath="$PROJECT_DIR$/src/com/company/MatrixFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MultiplyListener.java" afterPath="$PROJECT_DIR$/src/com/company/MultiplyListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/SumListener.java" afterPath="$PROJECT_DIR$/src/com/company/SumListener.java" />
     </list>
     <ignored path="MatrixOps.iws" />
@@ -50,11 +48,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiplyListener.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MultiplyListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/MultiplyListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.259259">
-              <caret line="71" column="22" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="22" />
+            <state vertical-scroll-proportion="-2.595285">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2660#2669#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SumListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/SumListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="47.25926">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,14 +73,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MatrixFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/MatrixFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8115672">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#256#265#0" expanded="true" />
+                <element signature="e#803#804#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#876#877#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,20 +97,6 @@
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SumListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/SumListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#912#921#0" expanded="true" />
-                <element signature="e#966#975#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,12 +143,12 @@
         <option value="$PROJECT_DIR$/src/com/company/MultiplyOperations.java" />
         <option value="$PROJECT_DIR$/src/com/company/OperationPanel.java" />
         <option value="$PROJECT_DIR$/src/com/company/SizePanel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/MultiplyListener.java" />
         <option value="$PROJECT_DIR$/src/com/company/MatrixFunctions.java" />
         <option value="$PROJECT_DIR$/src/com/company/AdjointListener.java" />
         <option value="$PROJECT_DIR$/src/com/company/MatFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/SumListener.java" />
         <option value="$PROJECT_DIR$/src/com/company/MatrixFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/SumListener.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MultiplyListener.java" />
       </list>
     </option>
   </component>
@@ -513,7 +514,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14608434" sideWeight="0.2814259" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15060242" sideWeight="0.7185741" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15060242" sideWeight="0.7185741" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2804878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -576,6 +577,7 @@
           <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2660#2669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -596,8 +598,6 @@
           <caret line="41" column="21" selection-start-line="36" selection-start-column="20" selection-end-line="41" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#912#921#0" expanded="true" />
-            <element signature="e#966#975#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -636,8 +636,6 @@
           <caret line="113" column="5" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#912#921#0" expanded="true" />
-            <element signature="e#966#975#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -666,8 +664,6 @@
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#912#921#0" expanded="true" />
-            <element signature="e#966#975#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -678,6 +674,7 @@
           <caret line="106" column="17" selection-start-line="87" selection-start-column="8" selection-end-line="106" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2660#2669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -716,6 +713,7 @@
           <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2660#2669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -744,6 +742,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2660#2669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -772,6 +771,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2660#2669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -800,6 +800,7 @@
           <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2660#2669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -828,6 +829,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2660#2669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -896,18 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/SumListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#912#921#0" expanded="true" />
-            <element signature="e#966#975#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/MatrixFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -918,23 +908,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MultiplyListener.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/MatrixFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.259259">
-          <caret line="71" column="22" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#256#265#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/SumListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="47.25926">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MatrixFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/MultiplyListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8115672">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state vertical-scroll-proportion="-2.595285">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#256#265#0" expanded="true" />
+            <element signature="e#2660#2669#0" expanded="true" />
           </folding>
         </state>
       </provider>

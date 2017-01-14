@@ -31,7 +31,11 @@ public class MatrixFrame extends JFrame
 
     public void addNums(int x)
     {
-        
+        nums.add(x);
+    }
+    public ArrayList<Integer> getNums()
+    {
+        return nums;
     }
 
     public ArrayList<JTextField> getFields()
