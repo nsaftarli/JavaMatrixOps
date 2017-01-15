@@ -16,6 +16,7 @@ public class AdjointListener implements ActionListener
     Scanner scanner;
     String sizes;
     //ArrayList<Integer> m1 = new ArrayList<Integer>();
+    ArrayList<Integer> adjList = new ArrayList<Integer>();
     int matrows, matcols, x, y, msize;
 
     ArrayList<Integer> adjoint;
@@ -75,37 +76,67 @@ public class AdjointListener implements ActionListener
 
     public void getAdj()
     {
-        ArrayList<Integer> tempList = new ArrayList<Integer>();
-        adjHelper(tempList, 0);
+        getCofactors();
     }
 
-    public void adjHelper(ArrayList<Integer> list, int n)
+    public void getCofactors()
     {
-        int x;
-        ArrayList<Integer> tempList;
-        if(list.size() == mFrame.getNums().size())
+        int index;
+        for(int i = 0; i < matrows; i++)
         {
-            return;
+            for(int j = 0; j < matcols; j++)
+            {
+                index = mFrame.getNums().get(i * matcols + j);
+                getSubmatrix(index, i, j);
+            }
         }
-        else if(list.size() == 4)
+        printAdj();
+    }
+    public void getSubmatrix(int index, int x, int y)
+    {
+        ArrayList<Integer> tempList = new ArrayList<Integer>();
+        int n;
+        for(int i = 0; i < matrows; i++)
         {
-            x = list.get(0) * list.get(3) - list.get(1) * list.get(2);
-            adjFrame.addNums(x);
+            for(int j = 0; j < matcols; j++)
+            {
+                n = mFrame.getNums().get(i * matcols + j);
+
+                if(i != x && j != y)
+                {
+                    //System.out.println(n);
+                    tempList.add(n);
+                }
+
+
+            }
+        }
+        if(tempList.size() == 4)
+        {
+            if((x + y) % 2 == 0)
+            {
+                adjList.add(tempList.get(0) * tempList.get(3) - tempList.get(1) * tempList.get(2));
+            }
+            else
+            {
+                adjList.add(-1 * (tempList.get(0) * tempList.get(3) - tempList.get(1) * tempList.get(2)));
+            }
         }
         else
         {
-            tempList = new ArrayList<Integer>();
-            for(int i = 0; i < matcols; i++)
-            {
-                for(int j = 0; j < matrows; j++)
-                {
-
-                }
-            }
-
+            getSubmatrix(index, x ,y);
         }
 
 
     }
+    public void printAdj()
+    {
+        for(int i = 0; i < adjList.size(); i++)
+        {
+            System.out.println(adjList.get(i));
+        }
+    }
+
+
 
 }
