@@ -16,6 +16,7 @@ public class MatFrame extends JFrame
             JMenu ops;
                 JMenuItem mult;
                 JMenuItem sum;
+                JMenuItem adj;
 
         //Create general frame and menus
         bar = new JMenuBar();
@@ -25,8 +26,10 @@ public class MatFrame extends JFrame
             ops = new JMenu("Operations");
                 mult = new JMenuItem("Multiply");
                 sum = new JMenuItem("Add/Subtract");
+                adj = new JMenuItem("Adjoint");
             ops.add(mult);
             ops.add(sum);
+            ops.add(adj);
         bar.add(file);
         bar.add(ops);
 
@@ -39,6 +42,10 @@ public class MatFrame extends JFrame
 
         ActionListener sumListener = new SumListener();
         sum.addActionListener(sumListener);
+
+        ActionListener adjListener = new AdjointListener();
+        adj.addActionListener(adjListener);
+
 
 
 

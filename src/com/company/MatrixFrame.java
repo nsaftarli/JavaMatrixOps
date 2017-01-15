@@ -12,8 +12,12 @@ public class MatrixFrame extends JFrame
     ArrayList<JTextField> fields;
     ArrayList<Integer> nums = new ArrayList<Integer>();
     JPanel panel;
+    int rows, cols, size;
     public MatrixFrame(int rows, int cols, String title)
     {
+        this.rows = rows;
+        this.cols = cols;
+        size = rows * cols;
         fields = new ArrayList<JTextField>();
         panel = new JPanel();
         panel.setLayout(new GridLayout(rows, cols));
@@ -37,6 +41,23 @@ public class MatrixFrame extends JFrame
     {
         return nums;
     }
+    public int getAt(int x)
+    {
+        return nums.get(x);
+    }
+    public int getRows()
+    {
+        return rows;
+    }
+    public int getCols()
+    {
+        return cols;
+    }
+    public int retSize()
+    {
+        return size;
+    }
+
 
     public ArrayList<JTextField> getFields()
     {

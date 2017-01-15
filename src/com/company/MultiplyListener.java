@@ -17,7 +17,7 @@ public class MultiplyListener implements ActionListener
     JButton mult;
     JOptionPane sizePane;
     MatrixFrame mFrame1, mFrame2;
-    
+
     public void actionPerformed(ActionEvent e)
     {
         getDimensions();
